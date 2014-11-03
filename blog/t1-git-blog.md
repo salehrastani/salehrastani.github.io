@@ -1,6 +1,6 @@
-Control Your Versions
+###Control Your Versions
 
-Version Control, Git and Github
+####Version Control, Git and Github
 
 11/02/14
 
