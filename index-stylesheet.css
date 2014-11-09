@@ -42,12 +42,18 @@ a {
   clear: both;
 }
 
-#blog {
+#social a {
+  max-height: 20% ;
+  max-width: 20%;
+
+}
+
+/*#blog {
   display: block;
   clear: both;
   width: 75%;
   float: left;
-}
+}*/
 
 #date {
   text-align: left;
