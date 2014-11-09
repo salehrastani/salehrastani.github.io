@@ -1,11 +1,39 @@
+body {
+  background-color: #FDFDFD;
+}
+
 #header {
   display: block;
   margin: auto;
 
 }
 
+#header-title {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 75px;
+  margin: 100px 50px 50px 50px;
+}
+
 .navbar {
-  display: inline-block;
+  font-family: 'Merriweather', serif;
+  display: block;
+  margin: auto;
+  margin-top: 0px;
+  text-align: center;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar a {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  padding-right: 3px;
+  color: #BFBFBD;
+
 }
 
 #social {
@@ -47,6 +75,7 @@
   display: inline-block;
   position: relative;
   float: left;
+  font-family: 'Merriweather', serif;
 
 }
 
@@ -54,6 +83,7 @@
   display: inline-block;
   position: relative;
   float: right;
+  font-family: 'Merriweather', serif;
 }
 
 #footer {
