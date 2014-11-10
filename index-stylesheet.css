@@ -9,14 +9,17 @@ body {
 }
 
 #header-title {
-  font-family: 'Open Sans', sans-serif;
   text-align: center;
-  font-size: 75px;
-  margin: 100px 50px 50px 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #E53992;
+  font-size: 65px;
+  margin: 80px 50px 40px 50px;
 }
 
 .navbar {
   font-family: 'Merriweather', serif;
+  font-weight: 300;
   display: block;
   margin: auto;
   margin-top: 0px;
@@ -31,21 +34,15 @@ a {
 .navbar a {
   font-family: 'Merriweather', serif;
   font-size: 15px;
-  padding-right: 3px;
+  padding-right: 8px;
   color: #BFBFBD;
-
 }
 
 #social {
-  display: inline-block;
+  position: fixed;
+  top: 50px;
+  right: 15px;
   float: right;
-  clear: both;
-}
-
-#social a {
-  max-height: 20% ;
-  max-width: 20%;
-
 }
 
 /*#blog {
@@ -53,7 +50,7 @@ a {
   clear: both;
   width: 75%;
   float: left;
-}*/
+}
 
 #date {
   text-align: left;
@@ -67,45 +64,71 @@ a {
   display: block;
   position: relative;
   float: left;
-}
+}*/
 
 #content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
   display: block;
   position: relative;
+  margin: auto;
   text-align: left;
-  float: left;
   clear: both;
+  max-width: 650px;
+  padding-top: 90px;
+  padding-bottom: 35px;
+  padding-left: 30px
 }
 
 #previous {
-  display: inline-block;
-  position: relative;
-  float: left;
   font-family: 'Merriweather', serif;
+  font-weight: 300;
+  display: inline-block;
+  margin: auto;
+  padding-top: 35px;
+  padding-left: 390px;
+  font-size: 20px;
 
-}
+  }
+
+  #previous img {
+    margin: -17px 15px;
+  }
 
 #next {
-  display: inline-block;
-  position: relative;
-  float: right;
   font-family: 'Merriweather', serif;
+  font-weight: 300;
+  display: inline-block;
+  margin: auto;
+  padding-top: 35px;
+  font-size: 20px;
+  padding-left: 25px
 }
+#next img {
+    margin: -17px 15px;
+  }
+
 
 #footer {
-  clear: both;
   display: block;
-  margin: auto;
+  position: relative;
+  background-color: black;
 
 }
 
 #footer-left {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
   position: relative;
   display: inline-block;
-  float: left;
+  float: right;
+  padding-right: 130px
 }
 
 #footer-right {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
   position: relative;
   display: inline-block;
   float: right;
