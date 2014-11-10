@@ -179,26 +179,23 @@ a {
   float: right;
 }
 
-/*#blog {
+#sidebar {
   display: block;
-  clear: both;
-  width: 75%;
-  float: left;
+  position: fixed;
+  right: 70px;
+  color: #59748F;
+  font-size: 13px;
+  font-family:'Merriweather', serif;
+  font-weight: 400;
 }
 
-#date {
-  text-align: left;
+#sidebar p {
+  color: #375D81;
+  font-size: 18px;
+  font-family:'Merriweather', serif;
+  padding-bottom: 7px
 }
 
-#title {
-  text-align: left;
-}
-
-#photo {
-  display: block;
-  position: relative;
-  float: left;
-}*/
 
 #content {
   font-family: 'Open Sans', sans-serif;
