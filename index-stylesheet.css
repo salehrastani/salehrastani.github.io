@@ -49,14 +49,14 @@ a {
   position: fixed;
   right: 70px;
   color: #59748F;
-  font-size: 13px;
+
   font-family:'Merriweather', serif;
   font-weight: 400;
 }
 
 #sidebar p {
   color: #375D81;
-  font-size: 18px;
+  font-size: 12px;
   font-family:'Merriweather', serif;
   padding-bottom: 7px
 }
