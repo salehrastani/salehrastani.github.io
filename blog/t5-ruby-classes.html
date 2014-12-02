@@ -65,8 +65,10 @@
                 This is how you create an object for the class and call its methods:<br>
                 <br>
                 <code>
-                  Books.new("The Well-Grounded Rubyist", "David Blake").cool_books<br>
+                Books.new("The Well-Grounded Rubyist", "David Blake").cool_books<br>
                 </code>
+                <br>
+                The main reason we use instance variables is to be able to acces those variables throughout the entire instance. For example, we created an instance of the Book class with the two arguments, <code>"The Well-Grounded Rubyist"</code> and <code>"David Blake"</code>.These two parameters were passed to the initialize method at the beginning of the class, but were also accessed afterwards in the following <code>cool_books</code> method. If the <code>title</code> and <code>author</code> variables were local variables we were not able to refer to them in the next method.
               </p>
             </div>
             <div id="previous"><a href="#"><div>Previous Post<img src="https://raw.githubusercontent.com/salehrastani/salehrastani.github.io/master/imgs/previous-arrow.png" /></div></a></div>
