@@ -110,7 +110,10 @@ a {
   font-size: 20px;
 }
 
-
+code {
+  font-size: 14px
+  text-align: left;
+}
 
 
 #previous {
