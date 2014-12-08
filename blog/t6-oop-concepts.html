@@ -32,6 +32,7 @@
                     <p><a href= "http://salehrastani.github.io/blog/c4-tech-issues">Week 4</a></p>
                     <p><a href= "http://salehrastani.github.io/blog/c5-feedback">Week 5</a></p>
                     <p><a href= "http://salehrastani.github.io/blog/c6-stereotype-threat">Week 6</a></p>
+
                 </div>
                 <div style="padding-top: 15px">
                     Technical Blog
@@ -41,23 +42,61 @@
                     <p><a href= "http://salehrastani.github.io/blog/t4-enumerable-methods">Week 4</a></p>
                     <p><a href= "http://salehrastani.github.io/blog/t5-ruby-classes">Week 5</a></p>
                     <p><a href= "http://salehrastani.github.io/blog/t6-oop-concepts">Week 6</a></p>
+
                 </div>
             </div>
             <div id="content">
               <img src= "https://raw.githubusercontent.com/salehrastani/salehrastani.github.io/master/imgs/index-page.png" />
-              <p id= "content-title">Theres Nothing to Hide</p>
-              <p id="content-subtitle">Tech Problems</p>
-              <p id="content-date">November 29, 2014</p>
+              <p id= "content-title"> ID vs Classes</p>
+              <p id="content-subtitle">CSS IDs and Classes</p>
+              <p id="content-date">November 9, 2014</p>
               <p id="content-body">
-                Your in the middle of the beach taking a picture of you and your significant other and within tenm minutes someone comes up to you and calls your name. The person is a total stranger. You never seen them before, however they seem to know you. They start talking about what countries youve traveled to recently, what your favorite beer is and how many pets you have.<br>
+                A class is structure that is used to make examples, technically known as instances objects of themselves. The contents of a class enable the instances with state and behavior. State include variables, data, attributes and constants. Behavior simply includes the methods that execute a give code. For example:
                 <br>
-                Who is this person? You start thinking that they are a fortune teller but the true question is, how they know so much about you? In fact, the person does not have any superficial powers whatsoever all they have is wifi and an Instagram account. You took a picture of yourself on Instagram and they located you through the location services you gave Instagram access to. This was a social media experiment, better known as a <a href = "https://www.youtube.com/watch?v=uNkwAyt2Nm8">social media prank</a>, Jack Vale did on YouTube.<br>
+                <code>
+                  class Devbootcamp
+                    def initilize(student)
+                      students = []
+                      @student = student
+                    end
+                    def add
+                      students << @student
+                    end
+                  end
+                </code>
                 <br>
-                Even though the prank truly makes you crack up, the issue of social privacy on the internet is growing into an extremely critical aspect of the prgoressing tech world. Uber, for example has the data entailing where we were in the near and far past. YouTube knows exactly what kind of videos we like to watch. Facebook can more about ourselves and we might be able to. The same goes with Google+, Google Maps, etc.<br>
+                On the other hand, Modules simply encapsulate methods and constants. The module holds the code with it, which can be used in another a different scope of code by simply calling it. The unique trait of modules is that it is mostly used when a collection of code and variables are good together but do not require the creation of an instance.
                 <br>
-                The reality is that the privacy issue in tech has been there form the beginning, which is why encryption and privacy policies have been so important. The financial and economic facet of the internet obviously calls for privacy and truth be told it has held up pretty darn good up to now.<br>
+                <code>
+                  Module Classes
+
+                    @student_cap = 30
+
+                    def within_cap
+                      if @student_cap <= 30
+                        return true
+                      end
+                    end
+
+                  end
+                </code>
                 <br>
-                What users need to do is to increase their awareness of what they are exactly sharing with the social companies and websites they use. The websites should also alert their users of what information is actually being shared in their websites. For example, iphone apps always ask for permission to access your location. This is part of Apple's policies for making an app. Regulations like these could ultimately creat a safer and more reliable tech environment on the web.
+                Ultimately, the module is called within the class or method that you need it:
+                <br>
+                <code>
+                  class Devbootcamp
+                    def initilize(student)
+
+                      include "week"
+
+                      students = []
+                      @student = student
+                    end
+                    def add
+                      students << @student
+                    end
+                  end
+                </code>
               </p>
             </div>
             <div id="previous"><a href="#"><div>Previous Post<img src="https://raw.githubusercontent.com/salehrastani/salehrastani.github.io/master/imgs/previous-arrow.png" /></div></a></div>
