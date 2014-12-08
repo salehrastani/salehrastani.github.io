@@ -47,56 +47,63 @@
             </div>
             <div id="content">
               <img src= "https://raw.githubusercontent.com/salehrastani/salehrastani.github.io/master/imgs/index-page.png" />
-              <p id= "content-title"> ID vs Classes</p>
-              <p id="content-subtitle">CSS IDs and Classes</p>
-              <p id="content-date">November 9, 2014</p>
+              <p id= "content-title"> Modules vs Classes</p>
+              <p id="content-subtitle">Ruby Modules and Classes</p>
+              <p id="content-date">December 8, 2014</p>
               <p id="content-body">
                 A class is structure that is used to make examples, technically known as instances objects of themselves. The contents of a class enable the instances with state and behavior. State include variables, data, attributes and constants. Behavior simply includes the methods that execute a give code. For example:
                 <br>
-                <code>
-                  class Devbootcamp
-                    def initilize(student)
-                      students = []
-                      @student = student
-                    end
-                    def add
-                      students << @student
-                    end
-                  end
-                </code>
-                <br>
-                On the other hand, Modules simply encapsulate methods and constants. The module holds the code with it, which can be used in another a different scope of code by simply calling it. The unique trait of modules is that it is mostly used when a collection of code and variables are good together but do not require the creation of an instance.
-                <br>
-                <code>
-                  Module Classes
-
-                    @student_cap = 30
-
-                    def within_cap
-                      if @student_cap <= 30
-                        return true
-                      end
-                    end
-
-                  end
-                </code>
-                <br>
-                Ultimately, the module is called within the class or method that you need it:
                 <br>
                 <code>
                   <pre>
-                  class Devbootcamp<>
-                    def initilize(student)
+    class Devbootcamp
+      def initilize(student)
+        students = []
+        @student = student
+      end
+      def add
+        students << @student
+      end
+    end
+                </pre>
+                </code>
+                <br>
+                <br>
+                On the other hand, Modules simply encapsulate methods and constants. The module holds the code with it, which can be used in another a different scope of code by simply calling it. The unique trait of modules is that it is mostly used when a collection of code and variables are good together but do not require the creation of an instance.
+                <br>
+                <br>
+                <code>
+                  <pre>
+    Module Classes
 
-                      include "week"
+      @student_cap = 30
 
-                      students = []
-                      @student = student
-                    end
-                    def add
-                      students << @student
-                    end
-                  end
+      def within_cap
+        if @student_cap <= 30
+          return true
+        end
+      end
+
+    end
+                  </pre>
+                </code>
+                <br>
+                <br>
+                Ultimately, the module is called within the class or method that you need it:
+                <br>
+                <br>
+                <code>
+                  <pre>
+    class Devbootcamp
+      def in
+
+        students = []
+        @student = student
+      end
+      def add
+        students << @student
+      end
+    end
                 </pre>
                 </code>
               </p>
