@@ -45,11 +45,10 @@ a {
 }
 
 #sidebar {
-  display: block;
-  position: fixed;
+  display: inline block;
+  position: absolute;
   right: 70px;
-  color: #59748F;
-
+  color: #59748F4
   font-family:'Merriweather', serif;
   font-weight: 400;
 }
