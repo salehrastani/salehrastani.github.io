@@ -47,11 +47,43 @@
             </div>
             <div id="content">
               <img src= "https://raw.githubusercontent.com/salehrastani/salehrastani.github.io/master/imgs/index-page.png" />
-              <p id= "content-title"> ID vs Classes</p>
-              <p id="content-subtitle">CSS IDs and Classes</p>
-              <p id="content-date">November 9, 2014</p>
+              <p id= "content-title">Ruby Methods vs Javascript Functions</p>
+              <p id="content-subtitle">Ruby and Javascript</p>
+              <p id="content-date">December 14, 2014</p>
               <p id="content-body">
-
+                There must be tons of differences between Javascript and ruby syntax and data structures. Whether its creating a variable, playing with a hash, looping in-between elements or even starting and ending a function, Javascript and Ruby remind you that they are different languages.<br>
+                <br>
+                That being said, they are also very similar in so many aspects. In this blog we are going to be lookin at the similarities and differences between the essential structure of a Ruby method and Javascript function. A function in Javascript refers to the same thing a method would refer to in Ruby. It is a block of code that entails a set of commands that will take place when it is called. This makes the block of code totally accessible.<br>
+                <br>
+                When we want to create a function or method, the block of code is obviously assigned a name, it perhaps accepts an argument or two, it is filled with code that takes those arguments and makes changes to them and finally presents the result when it is referred to later in the file. These are the similarities. They are very fundamental and structural. The differences, however, are found in the detailed syntax of each.<br>
+                <br>
+                In Javascript a function is initiated by typing:<br>
+                <br>
+                <code>var functionName = function ()</code><br>
+                <br>
+                The one interesting thing that this initial line of code has is that the parenthesis are necessary, whether you have a parameter or not. If you don't have any parameters to assign htan keep the parenthesis empty to avoid errors. Another way to do this quicker is:<br>
+                <br>
+                <code>function functionName ()</code><br>
+                <br>
+                In Ruby a method is initiated by typing <code>def</code>, as in define. After that you simply type the <code>method_name</code>. Note that there is no need to have an empty parenthesis at the end. A parenthesis is only added if the method receives an argument:<br>
+                <br>
+                <code>def method_name</code><br>
+                <br>
+                Another difference is the braces that start and end the function in Javascript:<br>
+                <br>
+                <code>
+                function functionName (){
+                  console.log(2 + 2)
+                }
+                </code><br>
+                <br>
+                The curly braces in javascript are exchanged with <code>end</code> in Ruby:<br>
+                <br>
+                <code>
+                def method_name
+                  puts 2 + 2
+                end
+              </code>
               </p>
             </div>
             <div id="previous"><a href="#"><div>Previous Post<img src="https://raw.githubusercontent.com/salehrastani/salehrastani.github.io/master/imgs/previous-arrow.png" /></div></a></div>
