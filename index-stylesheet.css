@@ -40,8 +40,8 @@ a {
 #social {
   position: fixed;
   top: 50px;
-  right: 15px;
-  float: right;
+  left: 15px;
+  float: left;
 }
 
 #sidebar {
@@ -61,7 +61,12 @@ a {
   padding-bottom: 7px
 }
 
-
+#sidebar .blog-header{
+  color: #375D81;
+  font-size: 16px;
+  font-family:'Merriweather', serif;
+  padding-bottom: 7px
+}
 
 #content {
   font-family: 'Open Sans', sans-serif;
@@ -128,29 +133,33 @@ a {
 #footer {
   display: block;
   position: relative;
-  background-color: #E1E6FA;
+  background-color: #FAFAFA;
 
 }
 
 #footer-left {
   font-family: 'Merriweather', serif;
-  font-size: 18px;
+  font-size: 15px;
   position: relative;
   display: inline-block;
-  float: right;
-  padding-right: 150px;
+  float: left;
+  padding-left: 90px;
   font-color: #59748F;
 }
 
 #footer-right {
   font-family: 'Merriweather', serif;
-  font-size: 18px;
+  font-size: 15px;
   position: relative;
   display: inline-block;
-  float: right;
-  padding-right: 80px;
+  float: left;
+  padding-left: 110px;
   font-color: #59748F;
 }
+
+
+
+
 
 
 

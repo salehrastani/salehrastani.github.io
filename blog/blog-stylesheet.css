@@ -41,7 +41,7 @@ a {
   position: fixed;
   top: 50px;
   left: 15px;
-  float: right;
+  float: left;
 }
 
 #sidebar {
@@ -161,27 +161,27 @@ a {
 #footer {
   display: block;
   position: relative;
-  background-color: #E1E6FA;
+  background-color: #FAFAFA;
 
 }
 
 #footer-left {
   font-family: 'Merriweather', serif;
-  font-size: 18px;
+  font-size: 15px;
   position: relative;
   display: inline-block;
-  float: right;
-  padding-right: 150px;
+  float: left;
+  padding-left: 80px;
   font-color: #59748F;
 }
 
 #footer-right {
   font-family: 'Merriweather', serif;
-  font-size: 18px;
+  font-size: 15px;
   position: relative;
   display: inline-block;
-  float: right;
-  padding-right: 80px;
+  float: left;
+  padding-left: 150px;
   font-color: #59748F;
 }
 
