@@ -40,13 +40,13 @@ a {
 #social {
   position: fixed;
   top: 50px;
-  right: 15px;
+  left: 15px;
   float: right;
 }
 
 #sidebar {
-  display: block;
-  position: fixed;
+  display: inline block;
+  position: absolute;
   right: 70px;
   color: #59748F4
   font-family:'Merriweather', serif;
@@ -56,6 +56,13 @@ a {
 #sidebar p {
   color: #375D81;
   font-size: 12px;
+  font-family:'Merriweather', serif;
+  padding-bottom: 7px
+}
+
+#sidebar .blog-header{
+  color: #375D81;
+  font-size: 16px;
   font-family:'Merriweather', serif;
   padding-bottom: 7px
 }
