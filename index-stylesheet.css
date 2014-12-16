@@ -105,9 +105,10 @@ a {
   padding-bottom: 85px;
   }
 
-  #previous p {
-    color: #59748F;
-  }
+#previous a {
+  text-decoration: none;
+  color: #4BB5C1;
+}
 
   #previous img {
     margin: -17px 15px;
@@ -122,12 +123,16 @@ a {
   font-size: 20px;
   padding-left: 25px;
   padding-bottom: 85px;
-  color: #59748F;
 }
 
 #next img {
     margin: -17px 15px;
   }
+
+#next a {
+  text-decoration: none;
+  color: #4BB5C1;
+}
 
 #footer {
   display: block;
@@ -143,7 +148,8 @@ a {
   display: inline-block;
   float: left;
   padding-left: 90px;
-  font-color: #59748F;
+  font-color: black;
+  text-decoration: none;
 }
 
 #footer-right {
@@ -153,7 +159,8 @@ a {
   display: inline-block;
   float: left;
   padding-left: 110px;
-  font-color: #59748F;
+  font-color: black;
+  text-decoration: none;
 }
 
 
