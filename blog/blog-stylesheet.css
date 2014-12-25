@@ -45,7 +45,7 @@ a {
 }
 
 #sidebar {
-  display: inline block;
+  display: inline-block;
   position: absolute;
   right: 70px;
   color: #59748F4
@@ -57,17 +57,16 @@ a {
   color: #375D81;
   font-size: 12px;
   font-family:'Merriweather', serif;
-  padding-bottom: 7px
+  padding-bottom: 7px;
+  text-decoration: none;
 }
 
-#sidebar div .blog-header{
-  color: #375D81;
+#sidebar .blog-header{
+  color: #4BB5C1;
   font-size: 16px;
   font-family:'Merriweather', serif;
-  padding-bottom: 7px
+  padding-bottom: 7px;
 }
-
-
 
 #content {
   font-family: 'Open Sans', sans-serif;
@@ -80,9 +79,7 @@ a {
   padding-top: 70px;
   padding-bottom: 35px;
   color: black;
-
 }
-
 
 #content img{
   padding-left: 15px;
@@ -121,7 +118,6 @@ a {
   font-size: 20px
   text-align: left;
 }
-
 
 #previous {
   font-family: 'Merriweather', serif;
@@ -167,30 +163,22 @@ a {
   display: block;
   position: relative;
   background-color: #FAFAFA;
-
 }
 
-#footer-left {
-  font-family: 'Merriweather', serif;
-  font-size: 15px;
+#footer-links {
   position: relative;
-  display: inline-block;
-  float: left;
-  padding-left: 90px;
-  font-color: black;
-  text-decoration: none;
+  text-align: center;
 }
 
-#footer-right {
+#footer-links a {
+  color: #375D81;
   font-family: 'Merriweather', serif;
-  font-size: 15px;
-  position: relative;
+  font-size: 12px;
   display: inline-block;
-  float: left;
-  padding-left: 110px;
-  font-color: black;
   text-decoration: none;
+  margin: 7px 8px;
 }
+
 
 
 
