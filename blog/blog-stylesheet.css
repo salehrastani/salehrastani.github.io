@@ -107,7 +107,8 @@ a {
   padding-bottom: 30px;
 }
 
-#content-body {
+#content-body p {
+  text-indent: 50px;
   text-align: justify;
   padding-top: 20px;
   padding-left: 20px;
