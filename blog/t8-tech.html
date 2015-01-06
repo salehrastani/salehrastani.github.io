@@ -65,60 +65,68 @@
                 <p>
                   Now, let's try to create a method that will count down from any given number to zero, like it were to be a countdown to New Years. This method can be defined in many ways. For example, we could use a while loop:
                 </p>
-                <code>
-                  def countdown(i)
-                    array = []
-                    while i >= 0
-                      array << i
-                      i -= 1
-                    end
-                    array
-                  end
-                </code>
+                <pre>
+                  <code>
+    def countdown(i)
+      array = []
+      while i >= 0
+        array << i
+        i -= 1
+      end
+      array
+    end
+                  </code>
+                </pre>
                 <p>
                   Another more proffessional way to create the method would be to use a supplementary method called <code>.downto</code>, which accepts a code block:
                 </p>
-                <code>
-                  def countdown(i)
-                    array = []
-                    i.downto(0) {|i| array << i}
-                    array
-                  end
-                </code>
+                <pre>
+                  <code>
+    def countdown(i)
+      array = []
+      i.downto(0) {|i| array << i}
+      array
+    end
+                  </code>
+                </pre>
                 <p>
                   Now, if we were to use recursion we would have to keep a few things in mind. Recursion is like a while loop it needs a place to stop, a base, or else it will continue forever. The base in our countdown method is 0. We want the method to start from the given number and continue down to zero:
                 </p>
-                <code>
-                  def countdown(array, i)
-                    if i < 0
-                      array
-                    end
-                    array << i
-                    countdown(array, i-1)
-                  end
+                <pre>
+                  <code>
+    def countdown(array, i)
+      if i < 0
+        array
+      end
+      array << i
+      countdown(array, i-1)
+    end
 
-                  countdown([], 5) => [5,4,3,2,1,0]
-                </code>
+    countdown([], 5) => [5,4,3,2,1,0]
+                  </code>
+                </pre>
                 <p>
                   The first thing you may notice is that we have set the array as a parameter. This is because recursion will start the method over and over again from the beginning, which will therefore empty our array if it were like this:
                 </p>
-                <code>
-                   def countdown(i)
-                    array = []
-                    if i < 0
-                      array
-                    end
-                    array << i
-                    countdown(i-1) # our method will start at the top, on the second line array will be empty again.
-                  end
+                <pre>
+                  <code>
+    def countdown(i)
+      array = []
+      if i < 0
+        array
+      end
+      array << i
+      countdown(i-1) # our method will start at the top and on tharray will be empty again.
+    end
 
-                  countdown(5) => []
-                </code>
+    countdown(5) => []
+                  </code>
+                </pre>
                 <p>
-                  Going back to the previous example, we have set the base at zero by asking the method to return the array once the variable <code>i</code> has reached -1. If <code>i</code> is zero or greater it will push it into the array and save it there. Then the process starts all over again until we actually hit the base at negative one.
+                  Going back to the previous example, we have set the base at zero by asking the method to return the array once the variable <code> i </code> has reached -1. If <code> i </code> is zero or greater it will push it into the array and save it there. Then the process starts all over again until we actually hit the base at negative one.
                 </p>
                 <p>
-                  As you may have noticed the countdown method looks the more elegant when it is done with the built-in <code>.downto</code> method and recursion makes it an aweful lot loonger than it should be, however recursion will definitely help you in more complex methods later.
+                  As you may have noticed the countdown method looks the more elegant when it is done with the built-in <code> .downto </code> method and recursion makes it an aweful lot loonger than it should be, however recursion will definitely help you in more complex methods later.
                 </p>
               </p>
             </div>
