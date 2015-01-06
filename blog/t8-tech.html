@@ -49,10 +49,78 @@
             </div>
             <div id="content">
               <img src= "https://raw.githubusercontent.com/salehrastani/salehrastani.github.io/master/imgs/index-page.png" />
-              <p id= "content-title"></p>
-              <p id="content-subtitle"></p>
-              <p id="content-date"></p>
-              <p id="content-body"></p>
+              <p id= "content-title">Recursion 101</p>
+              <p id="content-subtitle">Recursion</p>
+              <p id="content-date">January 4, 2015</p>
+              <p id="content-body">
+                <p>
+                  Recursion is a really cool method of using the a method within itself. There are restrictions on how and when you should use it. Methods that are done with recursion can often times be done with a while loop or an enumberable iteration  method but recursion makes the code cleaner and more elegant.
+                </p>
+                <p>
+                  It is basically coe that we have already written, so why not use it. That being said, in shorter versions of methods recursion could make the code even longer and complicated and we don't want that, so we have to pay attention to where we use it. I'll explain this a little more in an example below.
+                </p>
+                <p>
+                  One of the main points to learning how to do recursion is to believe in yourself and the method you are writing. The same way we learn how to use the include? method, or the print command, or a while loop, we need to believe that recursion will work without trying to understand the underlying process it entails. This is key because recursion is one of those techniques that might feel disorienting to the novice learner. Accept it as it is and it will make sense.
+                </p>
+                <p>
+                  Now, let's try to create a method that will count down from any given number to zero, like it were to be a countdown to New Years. This method can be defined in many ways. For example, we could use a while loop:
+                </p>
+                <code>
+                  def countdown(i)
+                    array = []
+                    while i >= 0
+                      array << i
+                      i -= 1
+                    end
+                    array
+                  end
+                </code>
+                <p>
+                  Another more proffessional way to create the method would be to use a supplementary method called <code>.downto</code>, which accepts a code block:
+                </p>
+                <code>
+                  def countdown(i)
+                    array = []
+                    i.downto(0) {|i| array << i}
+                    array
+                  end
+                </code>
+                <p>
+                  Now, if we were to use recursion we would have to keep a few things in mind. Recursion is like a while loop it needs a place to stop, a base, or else it will continue forever. The base in our countdown method is 0. We want the method to start from the given number and continue down to zero:
+                </p>
+                <code>
+                  def countdown(array, i)
+                    if i < 0
+                      array
+                    end
+                    array << i
+                    countdown(array, i-1)
+                  end
+
+                  countdown([], 5) => [5,4,3,2,1,0]
+                </code>
+                <p>
+                  The first thing you may notice is that we have set the array as a parameter. This is because recursion will start the method over and over again from the beginning, which will therefore empty our array if it were like this:
+                </p>
+                <code>
+                   def countdown(i)
+                    array = []
+                    if i < 0
+                      array
+                    end
+                    array << i
+                    countdown(i-1) # our method will start at the top, on the second line array will be empty again.
+                  end
+
+                  countdown(5) => []
+                </code>
+                <p>
+                  Going back to the previous example, we have set the base at zero by asking the method to return the array once the variable <code>i</code> has reached -1. If <code>i</code> is zero or greater it will push it into the array and save it there. Then the process starts all over again until we actually hit the base at negative one.
+                </p>
+                <p>
+                  As you may have noticed the countdown method looks the more elegant when it is done with the built-in <code>.downto</code> method and recursion makes it an aweful lot loonger than it should be, however recursion will definitely help you in more complex methods later.
+                </p>
+              </p>
             </div>
             <div id="previous">
               <a href="http://salehrastani.github.io/blog/t7-JavaScript"><div>Previous Post<img src="https://raw.githubusercontent.com/salehrastani/salehrastani.github.io/master/imgs/previous-arrow.png" /></div></a>
