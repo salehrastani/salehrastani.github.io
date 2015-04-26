@@ -162,12 +162,14 @@ a {
 
 #footer {
   display: block;
-  position: relative;
   background-color: #FAFAFA;
+  bottom:0;
+  clear:both;
+  text-align:center;
+  padding:5px;
 }
 
 #footer-links {
-  position: relative;
   text-align: center;
 }
 
