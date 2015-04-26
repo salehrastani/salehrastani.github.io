@@ -1,3 +1,37 @@
+.courier {
+  font-family: courier;
+}
+
 .projects {
   text-align: center;
+}
+
+.projects-image img{
+  width: 500px;
+  border-radius: 2px;
+}
+
+.projects-summary {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 25px 250px 45px;
+  font-size: 20px;
+}
+
+.ensemble:hover {
+  color: #2EC6D3;
+  text-decoration: none;
+}
+
+.ensemble {
+  color: #0876A6;
+}
+
+.bugzify:hover {
+  color: #2AD16B;
+  text-decoration: none;
+}
+
+.bugzify {
+  color: #0876A6;
 }

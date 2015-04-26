@@ -11,7 +11,7 @@ body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  color: #375D81;
+  color: #0876A6;
   font-size: 75px;
   margin: 80px 50px 40px 50px;
 }
@@ -116,7 +116,7 @@ a {
 }
 
 #content-body code {
-  font-size: 20px
+  font-size: 20px;
   text-align: left;
 }
 
@@ -136,9 +136,9 @@ a {
   color: #4BB5C1;
 }
 
-  #previous img {
-    margin: -17px 15px;
-  }
+#previous img {
+  margin: -17px 15px;
+}
 
 #next {
   font-family: 'Merriweather', serif;
