@@ -72,7 +72,7 @@ a {
 #content {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 25px;
   display: block;
   position: relative;
   margin: auto;
@@ -95,7 +95,7 @@ a {
 }
 
 #content p {
-  margin: 50px 350px;
+  margin: 50px 320px;
 }
 
 #previous {
