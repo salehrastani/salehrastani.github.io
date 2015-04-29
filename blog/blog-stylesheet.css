@@ -37,6 +37,10 @@ a {
   color: #59748F;
 }
 
+.navbar a:hover {
+  color: #BB000C;
+}
+
 #social {
   position: fixed;
   top: 12px;
@@ -182,7 +186,9 @@ a {
   margin: 7px 8px;
 }
 
-
+#footer a:hover {
+  color: #BB000C;
+}
 
 
 
