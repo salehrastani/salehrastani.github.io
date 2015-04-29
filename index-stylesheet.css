@@ -33,8 +33,11 @@ a {
 .navbar a {
   font-family: 'Merriweather', serif;
   font-size: 20px;
-  padding-right: 8px;
+  margin: 0px 15px;
   color: #59748F;
+}
+.navbar a:hover {
+  font-size: 25px;
 }
 
 #social {
