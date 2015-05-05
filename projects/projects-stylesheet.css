@@ -6,7 +6,11 @@
   text-align: center;
 }
 
-.projects-image img{
+/*.projects-image img{
+  width: 500px;
+  border-radius: 2px;
+}*/
+#project-1 img{
   width: 500px;
   border-radius: 2px;
 }
