@@ -47,10 +47,11 @@ a {
 
 .advertisement {
   position: fixed;
-  top: 12px;
+  top: 140px;
   right: 12px;
   float: right;
 }
+
 #sidebar {
   display: inline-block;
   position: absolute;
