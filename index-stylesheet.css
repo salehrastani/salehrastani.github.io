@@ -45,6 +45,12 @@ a {
   float: left;
 }
 
+.advertisement {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  float: right;
+}
 #sidebar {
   display: inline-block;
   position: absolute;
