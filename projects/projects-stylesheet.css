@@ -16,6 +16,11 @@
   border-radius: 2px;
 }
 
+#project-3 img{
+  width: 270px;
+  border-radius: 2px;
+}
+
 .projects-summary {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
